@@ -19,7 +19,7 @@ function UploadCV() {
     formData.append("cv", file);
 
     try {
-      const res = await fetch("http://localhost:4000/api/upload", {
+      const res = await fetch("http://localhost:4000/api/cvs/upload", {
         method: "POST",
         body: formData,
       });
